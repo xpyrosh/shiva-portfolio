@@ -1,0 +1,22 @@
+{
+  "name": "shiva-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpyrosh/shiva-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xpyrosh/shiva-portfolio/issues"
+  },
+  "homepage": "https://github.com/xpyrosh/shiva-portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
