@@ -14,6 +14,7 @@ a {
 
 .sidenav {
   display: flex;
+  flex-direction: column;
   background: #333;
   height: 100%;
   width: 100px;
@@ -21,10 +22,10 @@ a {
   z-index: 1;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow: visible;
   padding-top: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center; }
   .sidenav .nav-item {
     margin: 1rem;
@@ -39,9 +40,10 @@ a {
     .sidenav .nav-item a:hover + div {
       cursor: pointer;
       display: block;
-      width: 180px;
-      line-height: 20px;
+      width: 100px;
       padding: 8px;
-      font-size: 1.2rem;
-      text-align: center;
-      z-index: 999; }
+      margin-right: 40px;
+      padding: 0 2rem;
+      border: 1px solid red;
+      background: #f4f4f4;
+      border-radius: 5px; }
