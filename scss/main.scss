@@ -16,10 +16,12 @@ a {
     color: white;
 }
 
+// Side Navigation Bar
 .sidenav {
+    position: sticky;
     display: flex;
     flex-direction: column;
-    background: #333;
+    background: #000;
     height: 100%;
     width: 100px;
     position: fixed;
@@ -29,12 +31,24 @@ a {
     overflow: visible;
     padding-top: 20px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
 
-    .nav-item {
-        margin: 1rem;
-        position: relative;
+    
+    // Sidebar Logo
+    .logo {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    // Nav Items
+    .nav-items {
+        li {
+            margin: 1rem;
+            position: relative;
+        }
 
         div {
             display: none;
@@ -69,4 +83,10 @@ a {
             }
         }
     } 
+
+    // Social Media Links
+    .social-media {
+        margin-bottom: 2rem;
+        color: #fff;
+    }
 }
