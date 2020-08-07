@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu&display=swap');
+@import 'config';
 
 * {
     margin: 0;
@@ -37,6 +38,53 @@ a {
     justify-content: space-between;
     text-align: center;
     
+    // Set Icon Color
+    i {
+        color: $main-color;
+        transition: all .5s;
+        &:hover {
+            color: $secondary-color;
+            font-size: 1.3rem;
+        }
+    }
+
+    // Applies Tooltip Animation to all navbar LI A
+    li {
+        margin: 1rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltipinner {
+        visibility: hidden;
+        width: 200px;
+        background: black;
+        color: white;
+        text-align: center;
+        // border: 1px white solid;
+        padding: 0 1rem;
+
+        // Position Tooltip
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left: 170%;
+
+        // Text Edit
+        text-transform: uppercase;
+        font-size: 1.5rem;
+
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+    li:hover .tooltipinner {
+        visibility: visible;
+        opacity: 1;
+    }
+    // LI A Animation End
+
+
     // Sidebar Logo
     .logo {
         img {
@@ -48,46 +96,15 @@ a {
 
     // Nav Items
     .nav-items {
-        li {
-            margin: 1rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .tooltipinner {
-            visibility: hidden;
-            width: 200px;
-            background: black;
-            color: white;
-            text-align: center;
-            // border: 1px white solid;
-            padding: 0 1rem;
-
-            // Position Tooltip
-            position: absolute;
-            z-index: 1;
-            top: -5px;
-            left: 170%;
-
-            // Text Edit
-            text-transform: uppercase;
-            font-size: 1.5rem;
-
-            opacity: 0;
-            transition: opacity .5s;
-        }
-
-        li:hover .tooltipinner {
-            visibility: visible;
-            opacity: 1;
-        }
+    
     } 
 
     // Social Media Links
     .social-media {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         color: #fff;
         ul li {
+            margin: .5rem 1rem;
             padding: .5rem 0;
         }
     }

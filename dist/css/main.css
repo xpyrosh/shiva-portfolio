@@ -30,14 +30,17 @@ a {
   align-items: center;
   justify-content: space-between;
   text-align: center; }
-  .sidenav .logo img {
-    width: 60px;
-    height: 60px; }
-  .sidenav .nav-items li {
+  .sidenav i {
+    color: #7DFFFF;
+    transition: all .5s; }
+    .sidenav i:hover {
+      color: #FF73F5;
+      font-size: 1.3rem; }
+  .sidenav li {
     margin: 1rem;
     position: relative;
     display: inline-block; }
-  .sidenav .nav-items .tooltipinner {
+  .sidenav .tooltipinner {
     visibility: hidden;
     width: 200px;
     background: black;
@@ -52,11 +55,15 @@ a {
     font-size: 1.5rem;
     opacity: 0;
     transition: opacity .5s; }
-  .sidenav .nav-items li:hover .tooltipinner {
+  .sidenav li:hover .tooltipinner {
     visibility: visible;
     opacity: 1; }
+  .sidenav .logo img {
+    width: 60px;
+    height: 60px; }
   .sidenav .social-media {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: #fff; }
     .sidenav .social-media ul li {
+      margin: .5rem 1rem;
       padding: .5rem 0; }
