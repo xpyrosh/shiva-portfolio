@@ -26,7 +26,7 @@ a {
     display: flex;
     flex-direction: column;
     background: #000;
-    height: 100%;
+    height: 100vh;
     width: 75px;
     position: fixed;
     z-index: 1;
@@ -41,10 +41,13 @@ a {
     // Set Icon Color
     i {
         color: $main-color;
+        border-radius: 5px;
+        padding: .5rem;
         transition: all .5s;
         &:hover {
-            color: $secondary-color;
+            color: black;
             font-size: 1.3rem;
+            background: $main-color;
         }
     }
 
@@ -68,8 +71,8 @@ a {
         // Position Tooltip
         position: absolute;
         z-index: 1;
-        top: -5px;
-        left: 170%;
+        top: 0px;
+        left: 140%;
 
         // Text Edit
         text-transform: uppercase;
@@ -107,7 +110,6 @@ a {
         color: #fff;
         ul li {
             margin: .5rem 1rem;
-            padding: .5rem 0;
         }
     }
 }
