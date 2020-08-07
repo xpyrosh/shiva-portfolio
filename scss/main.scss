@@ -61,7 +61,8 @@ a {
         background: black;
         color: white;
         text-align: center;
-        // border: 1px white solid;
+        // border-right: 2px $main-color solid;
+        border-right: 2px $secondary-color solid;
         padding: 0 1rem;
 
         // Position Tooltip
@@ -81,6 +82,7 @@ a {
     li:hover .tooltipinner {
         visibility: visible;
         opacity: 1;
+        border-bottom: none;
     }
     // LI A Animation End
 
@@ -108,4 +110,68 @@ a {
             padding: .5rem 0;
         }
     }
+}
+
+
+// Core Page Content
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.all-content-outer {
+    // Using Viewport HEIGHT as the width and Viewport WIDTH as the height
+    width: 100vh;
+    height: 100vw;
+    // Rotate the outer wrapper to flip content
+    // If we don't translate we won't see any content
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    position: absolute;
+
+    // Scroll bar appears on top of page horizontally
+    // Firefox scroll bar disable
+    scrollbar-width: none;
+    
+    // This ms-overflow is obsolete and no longer supported... not sure what the replacement is 
+    // For IE
+    -ms-overflow-style:none;
+}
+
+// Chrome & Safari
+::-webkit-scrollbar {
+    display: none;
+}
+
+.all-content-inner {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+
+    // Using same transform as outter wrapper to undo inner wrapper rotate
+    // If we don't translate we won't see any content
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+
+// Color Test For Sections
+#home {
+    background: $bg-img no-repeat center center/cover;
+}
+
+#work {
+    background: cornflowerblue;
+}
+
+#contact {
+    background: crimson;
+}
+
+#fluff {
+    background: darkgoldenrod;
 }

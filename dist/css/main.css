@@ -31,10 +31,10 @@ a {
   justify-content: space-between;
   text-align: center; }
   .sidenav i {
-    color: #7DFFFF;
+    color: #25ff6d;
     transition: all .5s; }
     .sidenav i:hover {
-      color: #FF73F5;
+      color: #ff42ff;
       font-size: 1.3rem; }
   .sidenav li {
     margin: 1rem;
@@ -46,6 +46,7 @@ a {
     background: black;
     color: white;
     text-align: center;
+    border-right: 2px #ff42ff solid;
     padding: 0 1rem;
     position: absolute;
     z-index: 1;
@@ -57,7 +58,8 @@ a {
     transition: opacity .5s; }
   .sidenav li:hover .tooltipinner {
     visibility: visible;
-    opacity: 1; }
+    opacity: 1;
+    border-bottom: none; }
   .sidenav .logo img {
     width: 60px;
     height: 60px; }
@@ -67,3 +69,40 @@ a {
     .sidenav .social-media ul li {
       margin: .5rem 1rem;
       padding: .5rem 0; }
+
+.section {
+  width: 100vw;
+  height: 100vh; }
+
+.all-content-outer {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.all-content-inner {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left; }
+
+#home {
+  background: url(../img/main-background.jpg) no-repeat center center/cover; }
+
+#work {
+  background: cornflowerblue; }
+
+#contact {
+  background: crimson; }
+
+#fluff {
+  background: darkgoldenrod; }
