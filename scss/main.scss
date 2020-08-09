@@ -73,7 +73,7 @@ a {
         position: absolute;
         z-index: 1;
         top: 0px;
-        left: 140%;
+        left: 130%;
 
         // Text Edit
         text-transform: uppercase;
@@ -164,7 +164,53 @@ section {
 
 // Color Test For Sections
 #home {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    
+    // Overlay for background image
+    background: rgba($color: #000000, $alpha: .5);
+    color: white;
+
+    // On smaller pages the nav bar blocks content
+    // margin-left: 75px;
+    // padding: 0 75px;
+    
+    padding-top: 15rem;
+
+    // Name Title
+    h1 {
+        // text-transform: uppercase;
+        font-size: 4rem;
+        padding: 0 2rem;
+    }
+
+    // Tag Above Name
+    h2 {
+        padding: 0 1.5rem;
+        text-align: center;
+        margin-left: -40%;
+    }
+
+    p {
+        font-size: 1.5rem;
+        width: 50%;
+        margin-left: 25%;
+        text-decoration: wavy;
+        
+    }
+}
+
+// Using Home BEFORE to put the image behind the home which has a transparent background as an overlay
+#home::before {
+    content: '';
     background: $bg-img no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 #work {
