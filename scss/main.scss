@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu&display=swap');
 @import 'config';
+@import 'utilities';
 
 * {
     margin: 0;
@@ -117,7 +118,7 @@ a {
 
 // Core Page Content
 
-.section {
+section {
     width: 100vw;
     height: 100vh;
 }

@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu&display=swap");
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -72,7 +105,7 @@ a {
     .sidenav .social-media ul li {
       margin: .5rem 1rem; }
 
-.section {
+section {
   width: 100vw;
   height: 100vh; }
 
