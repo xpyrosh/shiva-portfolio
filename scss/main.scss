@@ -161,7 +161,7 @@ section {
     position: relative;
     justify-content: center;
     text-align: center;
-    
+    display: inline-block;
     // Overlay for background image
     background: rgba($color: #000000, $alpha: .5);
     color: white;
@@ -176,6 +176,7 @@ section {
     h1 {
         // text-transform: uppercase;
         font-size: 4rem;
+    
         padding: 0 2rem;
     }
 
@@ -198,6 +199,8 @@ section {
         margin-bottom: 3rem;
         width: 5rem;
     }
+
+    
 }
 
 // Using Home BEFORE to put the image behind the home which has a transparent background as an overlay

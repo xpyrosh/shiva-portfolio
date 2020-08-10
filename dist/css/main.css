@@ -40,9 +40,12 @@
   cursor: pointer; }
 
 .btn-main {
-  background-color: black;
+  background: black;
   color: #25ff6d;
   border: 1px #25ff6d solid; }
+  .btn-main:hover {
+    color: black;
+    background: #25ff6d; }
 
 .bottom-line {
   height: 2px;
@@ -50,6 +53,13 @@
   background: #ff42ff;
   display: block;
   margin: 0 auto 1rem auto; }
+
+.blink {
+  animation: blink 2s ease-in-out infinite; }
+
+@keyframes blink {
+  50% {
+    opacity: 0; } }
 
 * {
   margin: 0;
@@ -153,6 +163,7 @@ section {
   position: relative;
   justify-content: center;
   text-align: center;
+  display: inline-block;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   padding-top: 15rem; }

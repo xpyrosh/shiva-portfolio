@@ -40,11 +40,12 @@
 .btn {
     &-main {
         @extend %btn-shared;
-        background-color: black;
+        background: black;
         color: $main-color;
         border: 1px $main-color solid;
         &:hover {
-            
+            color: black;
+            background: $main-color;
         }
     }
 
@@ -57,4 +58,15 @@
     background: $secondary-color;
     display: block;
     margin: 0 auto 1rem auto;
+}
+
+// Blinking Effect
+.blink {
+    animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
