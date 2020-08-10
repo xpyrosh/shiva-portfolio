@@ -100,11 +100,6 @@ a {
         }
     }
 
-    // Nav Items
-    .nav-items {
-    
-    } 
-
     // Social Media Links
     .social-media {
         margin-bottom: 2.5rem;
@@ -117,7 +112,6 @@ a {
 
 
 // Core Page Content
-
 section {
     width: 100vw;
     height: 100vh;
@@ -197,7 +191,12 @@ section {
         width: 50%;
         margin-left: 25%;
         text-decoration: wavy;
-        
+    }
+
+    .bottom-line {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        width: 5rem;
     }
 }
 

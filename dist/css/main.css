@@ -32,6 +32,25 @@
 .my-4 {
   margin: 4rem 0; }
 
+.btn-main {
+  display: inline-block;
+  padding: .8rem 2rem;
+  transition: all .5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  background-color: black;
+  color: #25ff6d;
+  border: 1px #25ff6d solid; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ff42ff;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -149,6 +168,10 @@ section {
     width: 50%;
     margin-left: 25%;
     text-decoration: wavy; }
+  #home .bottom-line {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 5rem; }
 
 #home::before {
   content: '';
