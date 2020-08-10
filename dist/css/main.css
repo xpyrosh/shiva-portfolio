@@ -195,7 +195,10 @@ section {
   z-index: -1; }
 
 #work {
-  background: cornflowerblue; }
+  background: #f4f4f4; }
+  #work h1 {
+    text-transform: uppercase;
+    font-size: 2rem; }
 
 #contact {
   background: crimson; }
