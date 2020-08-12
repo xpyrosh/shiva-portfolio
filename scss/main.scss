@@ -222,6 +222,19 @@ section {
         text-transform: uppercase;
         font-size: 2rem;
     }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .box {
+            position: relative;
+            .img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
 }
 
 #contact {

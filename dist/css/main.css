@@ -199,6 +199,14 @@ section {
   #work h1 {
     text-transform: uppercase;
     font-size: 2rem; }
+  #work .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #work .projects .box {
+      position: relative; }
+      #work .projects .box .img {
+        width: 100px;
+        height: 100px; }
 
 #contact {
   background: crimson; }
