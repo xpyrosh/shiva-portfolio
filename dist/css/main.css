@@ -201,12 +201,22 @@ section {
     font-size: 2rem; }
   #work .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; }
     #work .projects .box {
+      overflow: hidden;
       position: relative; }
-      #work .projects .box .img {
-        width: 100px;
-        height: 100px; }
+      #work .projects .box-img {
+        height: auto;
+        display: block; }
+        #work .projects .box-img img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: auto;
+          line-height: 0;
+          object-fit: cover; }
 
 #contact {
   background: crimson; }

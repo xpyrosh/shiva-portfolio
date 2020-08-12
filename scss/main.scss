@@ -226,12 +226,28 @@ section {
     .projects {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
 
         .box {
+            overflow: hidden;
             position: relative;
-            .img {
-                width: 100px;
-                height: 100px;
+            
+            // Div containing the photo
+            &-img {
+                // max-width: 100%;
+                height: auto;
+                display: block;
+
+                // If we don't do this, the image retains it's size and expands grid item to cover everything
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: auto;
+                    line-height: 0;
+                    object-fit: cover;
+                }
             }
         }
     }
