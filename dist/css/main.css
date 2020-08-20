@@ -202,21 +202,21 @@ section {
   #work .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem; }
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
     #work .projects .box {
       overflow: hidden;
       position: relative; }
-      #work .projects .box-img {
+      #work .projects .box-img img {
         height: auto;
         display: block; }
-        #work .projects .box-img img {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: auto;
-          line-height: 0;
-          object-fit: cover; }
+      #work .projects .box-img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        line-height: 0;
+        object-fit: cover; }
 
 #contact {
   background: crimson; }
