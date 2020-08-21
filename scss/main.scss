@@ -228,31 +228,6 @@ section {
         grid-template-columns: repeat(3, 1fr);
         box-shadow: 0 5px 10px 0 rgba($color: #000000, $alpha: .3);
         // gap: 1rem;
-
-        .box {
-            overflow: hidden;
-            position: relative;
-            
-            // Div containing the photo
-            &-img {
-                // max-width: 100%;
-                img {
-                    height: auto;
-                    display: block;
-                }
-
-                // If we don't do this, the image retains it's size and expands grid item to cover everything
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: auto;
-                    line-height: 0;
-                    object-fit: cover;
-                }
-            }
-        }
     }
 }
 
