@@ -209,6 +209,8 @@ section {
     #work .projects .item {
       position: relative;
       overflow: hidden; }
+      #work .projects .item-image {
+        background: url(https://source.unsplash.com/random); }
       #work .projects .item::after {
         content: '';
         position: absolute;
@@ -224,6 +226,7 @@ section {
       #work .projects .item:hover::after {
         transform: scale(2) translateX(0) translateY(0) rotate(-35deg); }
       #work .projects .item:hover img {
+        content: url(./img/projects/1-1.png);
         transform: scale(1.2); }
       #work .projects .item img {
         width: 100%;

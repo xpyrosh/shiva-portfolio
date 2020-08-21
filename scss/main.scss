@@ -235,6 +235,9 @@ section {
 
         // Item is each grid block
         .item {
+            &-image {
+                background: url(https://source.unsplash.com/random);
+            }
 
             // Need relative position to anchor the overlay
             position: relative;
@@ -267,6 +270,7 @@ section {
             // Scale image on hover
             &:hover{
                 img {
+                    content: url(./img/projects/1-1.png);
                     transform: scale(1.2);
                 }
             }
