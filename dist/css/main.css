@@ -200,36 +200,45 @@ section {
   #work h1 {
     text-transform: uppercase;
     font-size: 2rem; }
+  #work h3 {
+    margin-bottom: 1rem; }
   #work .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
-    #work .projects .item::before {
-      width: 0;
-      height: 200%;
-      background: rgba(0, 0, 0, 0.5);
-      position: absolute;
-      top: 0;
-      left: -250px;
-      bottom: 0;
-      transform: skewX(-36deg);
-      transition: all .5s ease-in-out 0s; }
-      #work .projects .item::before:hover {
-        width: 200%; }
-    #work .projects .item img {
-      width: 100%;
-      height: auto; }
-    #work .projects .item-content {
-      width: 100%;
-      height: 100%;
-      padding-top: 20%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: scale(0);
-      transition: all .0s ease 0s; }
-    #work .projects .item:hover-content {
-      transform: scale(1); }
+    #work .projects .item {
+      position: relative;
+      overflow: hidden; }
+      #work .projects .item::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background: black;
+        opacity: .7;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(2) translateX(-75%) translateY(-75%) rotate(-35deg);
+        transition: transform 1.5s cubic-bezier(0.2, 1, 0.3, 1); }
+      #work .projects .item:hover::after {
+        transform: scale(2) translateX(0) translateY(0) rotate(-35deg); }
+      #work .projects .item:hover img {
+        transform: scale(1.2); }
+      #work .projects .item img {
+        width: 100%;
+        height: auto; }
+      #work .projects .item-content {
+        width: 100%;
+        height: 100%;
+        padding-top: 20%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        transition: all .0s ease 0s; }
+      #work .projects .item:hover-content {
+        transform: scale(1); }
 
 #contact {
   background: crimson; }
