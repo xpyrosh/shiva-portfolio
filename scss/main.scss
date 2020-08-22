@@ -265,7 +265,7 @@ section {
             }
 
             // Scale image on hover
-            &:hover &-image {
+            &:hover .item-image {
                 transform: scale(1.2);
             }
 
