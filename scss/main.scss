@@ -235,14 +235,11 @@ section {
 
         // Item is each grid block
         .item {
-            &-image {
-                background: url(https://source.unsplash.com/random);
-            }
-
             // Need relative position to anchor the overlay
             position: relative;
             // Hide overflow or overlay covers entire website
             overflow: hidden;
+            background: $main-color;
 
             // Creating the overlay and setting off screen before hover
             &::after{
@@ -268,34 +265,36 @@ section {
             }
 
             // Scale image on hover
-            &:hover{
-                img {
-                    content: url(./img/projects/1-1.png);
-                    transform: scale(1.2);
-                }
+            &:hover &-image {
+                transform: scale(1.2);
             }
 
-            img {
-                width: 100%;
+            // Image container
+            &-image {
                 height: auto;
+                // This translate and transform makes smooth scaling on hover
+                transform: translateZ(0);
+                transition: transform 750ms cubic-bezier(.2, 1, .3, 1);
+                display: block;
             }
 
-            &-content {
-                width: 100%;
-                height: 100%;
-                padding-top: 20%;
+            &-image:before {
+                content: '';
+                display: block;
+                padding-top: 75%;
+                overflow: hidden;
+            }
+        
+            &-image img {
                 position: absolute;
                 top: 0;
                 left: 0;
-                transform: scale(0);
-                transition: all .0s ease 0s;
+                width: 100%;
+                height: auto ;
+                line-height: 0;
+                object-fit: cover;
             }
 
-            &:hover {
-                &-content {
-                    transform: scale(1);
-                }
-            }
         }
     }
 }
