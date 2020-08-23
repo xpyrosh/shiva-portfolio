@@ -229,6 +229,7 @@ section {
 
     .projects {
         display: grid;
+        // gap: 1rem;
         grid-template-columns: repeat(3, 1fr);
         box-shadow: 0 5px 10px 0 rgba($color: #000000, $alpha: .3);
         // gap: 1rem;
@@ -267,10 +268,16 @@ section {
             // Scale image on hover
             &:hover .item-image {
                 transform: scale(1.2);
+                filter: blur(8px);
             }
 
             // Image container
             &-image {
+                background-image: url(../img/projects/1.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
                 height: auto;
                 // This translate and transform makes smooth scaling on hover
                 transform: translateZ(0);

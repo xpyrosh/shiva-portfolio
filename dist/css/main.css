@@ -225,8 +225,13 @@ section {
       #work .projects .item:hover::after {
         transform: scale(2) translateX(0) translateY(0) rotate(-35deg); }
       #work .projects .item:hover .item-image {
-        transform: scale(1.2); }
+        transform: scale(1.2);
+        filter: blur(8px); }
       #work .projects .item-image {
+        background-image: url(../img/projects/1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: auto;
         transform: translateZ(0);
         transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
