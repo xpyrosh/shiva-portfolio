@@ -244,6 +244,21 @@ section {
         height: auto;
         line-height: 0;
         object-fit: cover; }
+      #work .projects .item .item-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        text-align: center;
+        z-index: 1;
+        color: white;
+        transform: scale(0);
+        transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1); }
+      #work .projects .item:hover .item-content {
+        opacity: 1;
+        transform: scale(1); }
 
 #contact {
   background: crimson; }

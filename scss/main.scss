@@ -278,6 +278,7 @@ section {
                 display: block;
             }
 
+            // honestly not sure what this does but without it the grid doesn't appear
             &-image:before {
                 content: '';
                 display: block;
@@ -285,6 +286,7 @@ section {
                 overflow: hidden;
             }
         
+            // setting the image positioning and making it fit
             &-image img {
                 position: absolute;
                 top: 0;
@@ -293,6 +295,25 @@ section {
                 height: auto ;
                 line-height: 0;
                 object-fit: cover;
+            }
+
+            .item-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                text-align: center;
+                z-index: 1;
+                color: white;
+                transform: scale(0);
+                transition: opacity 500ms cubic-bezier(.2, 1, .3, 1), transform 500ms cubic-bezier(.2, 1, .3, 1);
+            }
+
+            &:hover .item-content {
+                opacity: 1;
+                transform: scale(1);
             }
 
         }
