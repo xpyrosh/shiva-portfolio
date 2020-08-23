@@ -43,7 +43,7 @@
 .btn-main {
   background: black;
   color: #25ff6d;
-  border: 1px #25ff6d solid; }
+  padding: .5rem 1rem; }
   .btn-main:hover {
     color: black;
     background: #25ff6d; }
@@ -215,7 +215,7 @@ section {
         position: absolute;
         display: block;
         background: black;
-        opacity: .7;
+        opacity: .8;
         top: 0;
         left: 0;
         width: 100%;
@@ -251,14 +251,33 @@ section {
         right: 0;
         bottom: 0;
         opacity: 0;
+        color: whitesmoke;
         text-align: center;
         z-index: 1;
-        color: white;
         transform: scale(0);
         transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1); }
       #work .projects .item:hover .item-content {
         opacity: 1;
         transform: scale(1); }
+      #work .projects .item .item-wrap {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%); }
+      #work .projects .item .title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        margin: 5px 0 0 0;
+        opacity: .8; }
+      #work .projects .item .bottom-line {
+        background: #25ff6d; }
+      #work .projects .item .desc {
+        padding: 0 .5rem 1rem .5rem; }
+      #work .projects .item .links .btn-main a {
+        color: #25ff6d; }
+      #work .projects .item .links .btn-main:hover a {
+        color: black; }
 
 #contact {
   background: crimson; }

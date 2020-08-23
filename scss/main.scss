@@ -247,7 +247,7 @@ section {
                 position: absolute;
                 display: block;
                 background: black;
-                opacity: .7;
+                opacity: .8;
                 // background: rgba(0,0,0,.5);
                 top: 0;
                 left: 0;
@@ -304,9 +304,9 @@ section {
                 right: 0;
                 bottom: 0;
                 opacity: 0;
+                color: whitesmoke;
                 text-align: center;
                 z-index: 1;
-                color: white;
                 transform: scale(0);
                 transition: opacity 500ms cubic-bezier(.2, 1, .3, 1), transform 500ms cubic-bezier(.2, 1, .3, 1);
             }
@@ -316,6 +316,43 @@ section {
                 transform: scale(1);
             }
 
+            .item-wrap {
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .title {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                padding: 0 1rem;
+                margin: 5px 0 0 0;
+                opacity: .8;
+            }
+
+            .bottom-line {
+                background: $main-color;
+            }
+
+            .desc {
+                padding: 0 .5rem 1rem .5rem;
+            }
+
+            .links{
+                // Probably a better way to do this, link colors not changing in buttons
+                .btn-main {
+                    a {
+                        color: $main-color;
+                    }
+
+                    &:hover {
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+            }
         }
     }
 }
