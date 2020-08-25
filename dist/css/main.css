@@ -55,6 +55,9 @@
   display: block;
   margin: 0 auto 1rem auto; }
 
+.fadein {
+  opacity: 0; }
+
 .blink {
   animation: blink 2s ease-in-out infinite; }
 
@@ -196,7 +199,7 @@ section {
   z-index: -1; }
 
 #work {
-  background: #f4f4f4; }
+  background: #b9c5ba; }
   #work h1 {
     text-transform: uppercase;
     font-size: 2rem; }

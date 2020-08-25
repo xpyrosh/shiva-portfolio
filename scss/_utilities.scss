@@ -61,6 +61,11 @@
     margin: 0 auto 1rem auto;
 }
 
+// Javascript Fade In
+.fadein {
+    opacity: 0;
+}
+
 // Blinking Effect
 .blink {
     animation: blink 2s ease-in-out infinite;
