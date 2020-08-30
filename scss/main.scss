@@ -174,7 +174,7 @@ section {
 
     // Name Title
     h1 {
-        // text-transform: uppercase;
+        text-transform: none;
         font-size: 4rem;
     
         padding: 0 2rem;
@@ -249,7 +249,7 @@ section {
                 position: absolute;
                 display: block;
                 background: black;
-                opacity: .8;
+                opacity: .6;
                 // background: rgba(0,0,0,.5);
                 top: 0;
                 left: 0;
@@ -368,8 +368,86 @@ section {
 }
 
 #contact {
-    background: crimson;
+    background: rgb(155, 202, 171);
+      
+    .contact-sections {     
+        .contact-form {
+            padding-top: 2rem;
+            .text-fields {
+                display: grid;
+                padding-top: 2rem;
+                grid-template-areas: 
+                'name phone'
+                'subject email'
+                'message message';
+                gap: 1.2rem;
+                margin-bottom: 1.2rem;
+
+                .name-input {
+                    grid-area: name;
+                }
+
+                .phone-input {
+                    grid-area: phone;
+                }
+
+                .email-input {
+                    grid-area: email;
+                }
+
+                .subject-input {
+                    grid-area: subject;
+                }
+
+                .message-input {
+                    grid-area: message;
+                    height: 200px;
+                }
+
+                .text-input {
+                    border: 1px #000 solid;
+                    border-radius: 5px;
+                    padding: .5rem 1rem;
+                }
+
+                input:focus,
+                textarea:focus {
+                    border: 1px $main-color solid;
+                }
+            }
+
+            // Submit Button
+            button[type='submit']{
+                width: 50%;
+                border-radius: 5px;
+                
+            }
+
+            .bottom-heading{
+                padding-top: 2rem;
+                color: rgb(134, 175, 148);
+                font-size: 3rem;
+            }
+        }
+
+    } 
+    .contact-info{
+        
+        background: rgb(134, 175, 148);
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+        
+
+        div {
+            padding: 2rem;
+        }
+    }
 }
+
 
 #fluff {
     background: darkgoldenrod;

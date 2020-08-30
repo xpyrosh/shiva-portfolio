@@ -29,6 +29,12 @@
     &-4 { margin: 4rem 0};
 }
 
+// Header
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
 // Buttons
 %btn-shared {
     display: inline-block;
@@ -49,6 +55,11 @@
             color: black;
             background: $main-color;
         }
+    }
+
+    &-regular {
+        @extend %btn-shared;
+        border: 1px solid #000;
     }
 }
 

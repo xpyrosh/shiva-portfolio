@@ -33,7 +33,11 @@
 .my-4 {
   margin: 4rem 0; }
 
-.btn-main {
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.btn-main, .btn-regular {
   display: inline-block;
   padding: .8rem 2rem;
   transition: all .5s;
@@ -47,6 +51,9 @@
   .btn-main:hover {
     color: black;
     background: #25ff6d; }
+
+.btn-regular {
+  border: 1px solid #000; }
 
 .bottom-line {
   height: 2px;
@@ -172,6 +179,7 @@ section {
   color: white;
   padding-top: 15rem; }
   #home h1 {
+    text-transform: none;
     font-size: 4rem;
     padding: 0 2rem; }
   #home h2 {
@@ -219,7 +227,7 @@ section {
         position: absolute;
         display: block;
         background: black;
-        opacity: .8;
+        opacity: .6;
         top: 0;
         left: 0;
         width: 100%;
@@ -285,7 +293,49 @@ section {
         color: black; }
 
 #contact {
-  background: crimson; }
+  background: #9bcaab; }
+  #contact .contact-sections .contact-form {
+    padding-top: 2rem; }
+    #contact .contact-sections .contact-form .text-fields {
+      display: grid;
+      padding-top: 2rem;
+      grid-template-areas: 'name phone' 'subject email' 'message message';
+      gap: 1.2rem;
+      margin-bottom: 1.2rem; }
+      #contact .contact-sections .contact-form .text-fields .name-input {
+        grid-area: name; }
+      #contact .contact-sections .contact-form .text-fields .phone-input {
+        grid-area: phone; }
+      #contact .contact-sections .contact-form .text-fields .email-input {
+        grid-area: email; }
+      #contact .contact-sections .contact-form .text-fields .subject-input {
+        grid-area: subject; }
+      #contact .contact-sections .contact-form .text-fields .message-input {
+        grid-area: message;
+        height: 200px; }
+      #contact .contact-sections .contact-form .text-fields .text-input {
+        border: 1px #000 solid;
+        border-radius: 5px;
+        padding: .5rem 1rem; }
+      #contact .contact-sections .contact-form .text-fields input:focus,
+      #contact .contact-sections .contact-form .text-fields textarea:focus {
+        border: 1px #25ff6d solid; }
+    #contact .contact-sections .contact-form button[type='submit'] {
+      width: 50%;
+      border-radius: 5px; }
+    #contact .contact-sections .contact-form .bottom-heading {
+      padding-top: 2rem;
+      color: #86af94;
+      font-size: 3rem; }
+  #contact .contact-info {
+    background: #86af94;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1.5rem;
+    margin-top: 2rem; }
+    #contact .contact-info div {
+      padding: 2rem; }
 
 #fluff {
   background: darkgoldenrod; }
