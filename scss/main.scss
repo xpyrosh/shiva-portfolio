@@ -402,7 +402,7 @@ section {
 
                 .message-input {
                     grid-area: message;
-                    height: 100px;
+                    height: 150px;
                 }
 
                 .text-input {
@@ -416,18 +416,13 @@ section {
                     border: 1px $main-color solid;
                 }
 
-                .recaptcha {
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                }
             }
 
             // Submit Button
             button[type='submit']{
                 width: 50%;
                 border-radius: 5px;
-                
+                padding-top: 1rem;
             }
 
             .bottom-heading{
