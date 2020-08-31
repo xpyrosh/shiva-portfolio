@@ -54,11 +54,14 @@ h1 {
 
 .btn-regular {
   border: 1px solid #000; }
+  .btn-regular:hover {
+    border: 1px solid #25ff6d;
+    color: #25ff6d; }
 
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #ff42ff;
+  background: black;
   display: block;
   margin: 0 auto 1rem auto; }
 
@@ -194,7 +197,8 @@ section {
   #home .bottom-line {
     margin-top: 1rem;
     margin-bottom: 3rem;
-    width: 5rem; }
+    width: 5rem;
+    background: #ff42ff; }
 
 #home::before {
   content: '';
@@ -324,7 +328,7 @@ section {
       width: 50%;
       border-radius: 5px; }
     #contact .contact-sections .contact-form .bottom-heading {
-      padding-top: 2rem;
+      padding-top: 3rem;
       color: #86af94;
       font-size: 3rem; }
   #contact .contact-info {
