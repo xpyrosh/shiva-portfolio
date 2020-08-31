@@ -316,7 +316,7 @@ section {
         grid-area: subject; }
       #contact .contact-sections .contact-form .text-fields .message-input {
         grid-area: message;
-        height: 200px; }
+        height: 100px; }
       #contact .contact-sections .contact-form .text-fields .text-input {
         border: 1px #000 solid;
         border-radius: 5px;
@@ -324,6 +324,10 @@ section {
       #contact .contact-sections .contact-form .text-fields input:focus,
       #contact .contact-sections .contact-form .text-fields textarea:focus {
         border: 1px #25ff6d solid; }
+      #contact .contact-sections .contact-form .text-fields .recaptcha {
+        align-items: center;
+        justify-content: center;
+        text-align: center; }
     #contact .contact-sections .contact-form button[type='submit'] {
       width: 50%;
       border-radius: 5px; }
