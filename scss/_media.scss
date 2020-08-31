@@ -1,0 +1,72 @@
+// Tablets & Smaller
+@media(max-width:800px){
+    .container{
+        max-width: 650px;
+    }
+
+    #home {
+        padding-top: 20rem;
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.2;
+        }
+
+        p {
+            width: 75%;
+            margin-left: 12%;
+        }
+    }
+
+    #work {
+        .projects {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    #contact {
+        .contact-sections {
+            .contact-form {
+                .bottom-heading {
+                    font-size: 2.5rem;
+                    padding-top: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-height:780px) {
+    #contact {
+        .contact-sections{
+            .contact-form{
+                .bottom-heading{
+                    font-size: 2rem;
+                    padding-top: 2rem;
+                }
+            }
+        }
+        .contact-info {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .sidenav {
+        display: none;
+    }
+
+    .all-content-outer {
+        transform: none;
+        transform-origin: none;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    .all-content-inner {
+        transform: none;
+    }
+}

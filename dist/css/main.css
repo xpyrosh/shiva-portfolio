@@ -326,7 +326,8 @@ section {
         border: 1px #25ff6d solid; }
     #contact .contact-sections .contact-form button[type='submit'] {
       width: 50%;
-      border-radius: 5px; }
+      border-radius: 5px;
+      padding-bottom: 1rem; }
     #contact .contact-sections .contact-form .bottom-heading {
       padding-top: 3rem;
       color: #86af94;
@@ -343,3 +344,39 @@ section {
 
 #fluff {
   background: darkgoldenrod; }
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 650px; }
+  #home {
+    padding-top: 20rem; }
+    #home h1 {
+      font-size: 3rem; }
+    #home h2 {
+      font-size: 1.2; }
+    #home p {
+      width: 75%;
+      margin-left: 12%; }
+  #work .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  #contact .contact-sections .contact-form .bottom-heading {
+    font-size: 2.5rem;
+    padding-top: 2.5rem; } }
+
+@media (max-height: 780px) {
+  #contact .contact-sections .contact-form .bottom-heading {
+    font-size: 2rem;
+    padding-top: 2rem; }
+  #contact .contact-info {
+    margin-top: 1rem; } }
+
+@media (max-width: 500px) {
+  .sidenav {
+    display: none; }
+  .all-content-outer {
+    transform: none;
+    transform-origin: none;
+    overflow-y: auto;
+    overflow-x: auto; }
+  .all-content-inner {
+    transform: none; } }
