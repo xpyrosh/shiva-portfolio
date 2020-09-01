@@ -517,8 +517,7 @@ makes it unscrollable and fixed to the top corner */
 
 @media (max-height: 780px) {
   #contact .contact-sections .contact-form .bottom-heading {
-    font-size: 2rem;
-    padding-top: 2rem; }
+    display: none; }
   #contact .contact-info {
     margin-top: 1rem; } }
 
