@@ -378,7 +378,7 @@ section {
   .sidenav {
     height: 0;
     width: 0;
-    display: none;
+    display: none !important;
     position: static;
     overflow: none; }
   .all-content-outer {
