@@ -265,7 +265,7 @@
                             <div class="bottom-line"></div>
 
                             <!-- contact form -->
-                            <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                            <form method="POST" name="contact-form" data-netlify="true" data-netlify-recaptcha="true">
                                 <div class="text-fields">
                                     <input type="text" class="text-input name-input" placeholder="Name" name="name">
                                     <input type="text" class="text-input phone-input" placeholder="Phone" name="phone">
@@ -274,13 +274,14 @@
 
                                     <textarea class="text-input message-input" placeholder="Enter your message" name="message"></textarea>
                                 </div>
+
+                                <!-- div for netlify re-captcha -->
+                                <div class="my-w">
+                                    <div data-netlify-recaptcha="true"></div>
+                                </div>
                                 
                                 <button type="submit" class="btn-regular">Submit</button>
-                                <!-- <div class="bottom-line"></div> -->
-                                
-                                <!-- div for netlify re-captcha -->
-                                <div data-netlify-recaptcha="true"></div>
-
+                                 
                             </form>
                             <h1 class="bottom-heading">LET'S START YOUR NEXT PROJECT!</h1>
                         </div>    
@@ -295,7 +296,7 @@
                     </div>
                     <div>
                         <i class="fas fa-phone fa-2x"></i>
-                        <h3>Email</h3>
+                        <h3>Phone</h3>
                         <p>647-236-1072</p>
                     </div>
                     <div>

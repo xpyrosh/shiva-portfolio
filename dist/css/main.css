@@ -310,7 +310,7 @@ section {
       padding-top: 2rem;
       grid-template-areas: 'name phone' 'subject email' 'message message';
       gap: 1.2rem;
-      margin-bottom: 1.2rem; }
+      margin-bottom: 1.5rem; }
       #contact .contact-sections .contact-form .text-fields .name-input {
         grid-area: name; }
       #contact .contact-sections .contact-form .text-fields .phone-input {
@@ -334,7 +334,7 @@ section {
       border-radius: 5px;
       padding-bottom: 1rem; }
     #contact .contact-sections .contact-form .btn-regular {
-      margin-bottom: 1rem; }
+      margin-top: 1.5rem; }
     #contact .contact-sections .contact-form .bottom-heading {
       padding-top: 3rem;
       color: #86af94;
