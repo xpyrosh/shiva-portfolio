@@ -330,6 +330,8 @@ section {
       width: 50%;
       border-radius: 5px;
       padding-bottom: 1rem; }
+    #contact .contact-sections .contact-form .btn-regular {
+      margin-bottom: 1rem; }
     #contact .contact-sections .contact-form .bottom-heading {
       padding-top: 3rem;
       color: #86af94;
@@ -374,6 +376,8 @@ section {
 
 @media (max-width: 500px) {
   .sidenav {
+    height: 0;
+    width: 0;
     display: none; }
   .all-content-outer {
     width: 100vw;
@@ -424,5 +428,9 @@ section {
       margin-bottom: .5rem; }
       #contact .contact-sections .contact-form .text-fields .message-input {
         height: 50px; }
+    #contact .contact-sections .contact-form .bottom-heading {
+      padding-top: .5rem;
+      font-size: 1.5rem; }
   #contact .contact-info {
-    display: none; } }
+    display: none;
+    margin-top: 0; } }
