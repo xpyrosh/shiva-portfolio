@@ -56,10 +56,9 @@
 
 @media(max-width:500px) {
     .sidenav {
-        height: 0;
-        width: 0;
-        display: none !important;
         position: static;
+        display: none !important;
+        z-index: -1;
         overflow:none;
     }
 
