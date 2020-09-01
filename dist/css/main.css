@@ -199,6 +199,8 @@ section {
     margin-bottom: 3rem;
     width: 5rem;
     background: #ff42ff; }
+  #home .arrowdown {
+    display: none; }
 
 #home::before {
   content: '';
@@ -374,9 +376,53 @@ section {
   .sidenav {
     display: none; }
   .all-content-outer {
+    width: 100vw;
+    height: 100vh;
+    position: static;
     transform: none;
     transform-origin: none;
     overflow-y: auto;
     overflow-x: auto; }
   .all-content-inner {
-    transform: none; } }
+    display: block;
+    transform: none;
+    width: 100vw; }
+  #home .arrowright {
+    display: none; }
+  #home .arrowdown {
+    display: block; }
+  #work {
+    height: auto; }
+    #work .projects {
+      display: block; }
+      #work .projects .item {
+        margin-bottom: 1rem; }
+  #contact {
+    height: auto; }
+    #contact .contact-sections .contact-form .text-fields {
+      display: flex;
+      flex-direction: column; }
+    #contact .contact-info {
+      display: block; }
+      #contact .contact-info div {
+        border-top: 1px dotted #9bcaab; } }
+
+@media (max-height: 450px) {
+  .sidenav {
+    display: block; }
+    .sidenav i {
+      font-size: .7rem; }
+  #home {
+    padding-top: 2rem; }
+  #work .projects {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100% 0; }
+  #contact .contact-sections .contact-form {
+    padding-top: .5rem; }
+    #contact .contact-sections .contact-form .text-fields {
+      padding-top: .5rem;
+      margin-bottom: .5rem; }
+      #contact .contact-sections .contact-form .text-fields .message-input {
+        height: 50px; }
+  #contact .contact-info {
+    display: none; } }
