@@ -67,6 +67,20 @@
         overflow:none;
     }
 
+    #home {
+        height: 85vh;
+        padding-top: 30%;
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
     .all-content-outer {
         width: 100vw;
         height: 100vh;
