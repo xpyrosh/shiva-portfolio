@@ -137,6 +137,16 @@ makes it unscrollable and fixed to the top corner */
     max-height: 100vh;
     opacity: 0;
     transition: opacity .4s ease;
+
+    .logo {
+        img {
+            background: black;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+            // border-radius: 50%;
+        }
+    }
 }
 
 .menu-wrap .menu > div > div{
