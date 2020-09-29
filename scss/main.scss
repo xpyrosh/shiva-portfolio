@@ -22,6 +22,11 @@ a {
     color: white;
 }
 
+// Needed to fix Chrome and Edge error with :focus creating black box border 
+*,*:focus,*:hover{
+    outline:none;
+}
+
 // Hamburger Menu 
 .menu-wrap {
     display: none;
@@ -29,14 +34,14 @@ a {
 
 // Side Navigation Bar
 .sidenav {
-    position: sticky;
+    // position: sticky;
     display: flex;
     flex-direction: column;
     background: #000;
     height: 100vh;
     width: 75px;
     position: fixed;
-    z-index: 1;
+    z-index: 999!important;
     top: 0;
     left: 0;
     overflow: visible;
@@ -44,6 +49,7 @@ a {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    transform: translateZ(0);
     
     // Set Icon Color
     i {
@@ -423,7 +429,10 @@ section {
 
                 input:focus,
                 textarea:focus {
-                    border: 1px $main-color solid;
+                    border: 1px #444 solid;
+                    -webkit-box-shadow: 0 0 5px black;
+                    -moz-box-shadow: 0 0 5px black;
+                    box-shadow: 0 0 5px black;
                 }
 
             }

@@ -90,25 +90,28 @@ a {
   text-decoration: none;
   color: white; }
 
+*, *:focus, *:hover {
+  outline: none; }
+
 .menu-wrap {
   display: none; }
 
 .sidenav {
-  position: sticky;
   display: flex;
   flex-direction: column;
   background: #000;
   height: 100vh;
   width: 75px;
   position: fixed;
-  z-index: 1;
+  z-index: 999 !important;
   top: 0;
   left: 0;
   overflow: visible;
   padding-top: 20px;
   align-items: center;
   justify-content: space-between;
-  text-align: center; }
+  text-align: center;
+  transform: translateZ(0); }
   .sidenav i {
     color: #25ff6d;
     border-radius: 5px;
@@ -328,7 +331,10 @@ section {
         padding: .5rem 1rem; }
       #contact .contact-sections .contact-form .text-fields input:focus,
       #contact .contact-sections .contact-form .text-fields textarea:focus {
-        border: 1px #25ff6d solid; }
+        border: 1px #444 solid;
+        -webkit-box-shadow: 0 0 5px black;
+        -moz-box-shadow: 0 0 5px black;
+        box-shadow: 0 0 5px black; }
     #contact .contact-sections .contact-form button[type='submit'] {
       width: 50%;
       border-radius: 5px;
